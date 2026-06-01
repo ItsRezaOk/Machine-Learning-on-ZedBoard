@@ -1,10 +1,8 @@
 # Nano-ViT on a ZedBoard
 
-### CPRE 4870: from neural-network math to FPGA-backed inference
+### Neural-Network Math and FPGA Inference
 
 This repository is a semester-long hardware/software co-design portfolio. The final project trains a compact Vision Transformer (ViT) for Tiny ImageNet, exports its weights as raw `float32` binaries, reimplements the forward pass in C++, verifies every layer against Python reference tensors, and packages an AXI-stream floating-point multiply-accumulate (MAC) unit for a ZedBoard FPGA workflow.
-
-The interesting part is not a single accuracy number. It is the path from model definition to inspectable arithmetic:
 
 ```mermaid
 flowchart LR
